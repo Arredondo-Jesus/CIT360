@@ -6,13 +6,19 @@
 package edu.byui.cit360.controller;
 
 import edu.byui.cit360.model.Client;
+import java.io.Serializable;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.quickconnectfamily.json.JSONException;
+import org.quickconnectfamily.json.JSONUtilities;
+import org.quickconnectfamily.json.ParseException;
 
 /**
  *
@@ -49,5 +55,37 @@ public class ProcessClient {
             Logger.getLogger(ProcessClient.class.getName()).log(Level.SEVERE, null, ex);
         }
         return clients;
+    }
+
+    //Converts client object into JSONStrings using the stringify method from qcjson
+    public List convertToJSONString(List clients) {
+        List<String> stringList = new ArrayList<>();
+        Iterator<Client> it = clients.iterator();
+
+        while (it.hasNext()) {
+            Client client = it.next();
+            try {
+                String clientString = JSONUtilities.stringify(client);
+                stringList.add(clientString);
+            } catch (JSONException ex) {
+                Logger.getLogger(ProcessClient.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+
+        return stringList;
+    }
+
+    //Converst client JSONStrings into JSONObjects by using the parse method from qcJSON
+    public ArrayList convertToJSONObject(List JSONStrings) throws JSONException, ParseException {
+        Object JSONObject = new Object();
+        Iterator<String> it = JSONStrings.iterator();
+        ArrayList JSONObjects = new ArrayList();
+
+        while (it.hasNext()) {
+            String JSONString = it.next();
+            JSONObject = JSONUtilities.parse(JSONString);
+            JSONObjects.add(JSONObject);
+        }
+        return JSONObjects;
     }
 }

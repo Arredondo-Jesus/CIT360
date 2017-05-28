@@ -10,11 +10,16 @@ import edu.byui.cit360.model.DBConnection;
 import java.io.IOException;
 import java.sql.Connection;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import org.quickconnectfamily.json.JSONException;
+import org.quickconnectfamily.json.ParseException;
 
 /**
  *
@@ -47,6 +52,23 @@ public class sendClientInfo extends HttpServlet {
         clients = processClient.getClientInfo(conn, query);
         request.setAttribute("clients", clients);
 
+        //this are the methods used with qcJSON
+        List<String> clientStrings = processClient.convertToJSONString(clients);
+        ArrayList objs = new ArrayList();
+
+        try {
+            objs = processClient.convertToJSONObject(clientStrings);
+        } catch (JSONException | ParseException ex) {
+            Logger.getLogger(sendClientInfo.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        //this is to work with json through qcjson library
+        //List<Video> videoList = new ArrayList<>();
+        //SearchYoutubeVideos search = new SearchYoutubeVideos();
+        //DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+        //Date dateobj = new Date();
+        //DateTime date = new DateTime(df.format(dateobj) + "T00:00:00Z");
+        //videoList = search.searchVideosInChannel("UCupvZG-5ko_eiXAupbDfxWw", 25, date);
         request.getRequestDispatcher("clientList.jsp").forward(request, response);
     }
 

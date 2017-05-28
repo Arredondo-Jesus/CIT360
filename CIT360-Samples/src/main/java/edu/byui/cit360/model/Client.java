@@ -9,7 +9,7 @@ package edu.byui.cit360.model;
  *
  * @author Jesus Arredondo
  */
-public class Client {
+public class Client implements java.io.Serializable {
 
     private int id;
     private String name;
