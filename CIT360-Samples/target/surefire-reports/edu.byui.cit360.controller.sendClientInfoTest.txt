@@ -1,0 +1,23 @@
+-------------------------------------------------------------------------------
+Test set: edu.byui.cit360.controller.sendClientInfoTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 3, Skipped: 0, Time elapsed: 0.109 sec <<< FAILURE!
+testDoPost(edu.byui.cit360.controller.sendClientInfoTest)  Time elapsed: 0.076 sec  <<< ERROR!
+java.lang.NullPointerException
+	at edu.byui.cit360.controller.sendClientInfo.processRequest(sendClientInfo.java:42)
+	at edu.byui.cit360.controller.sendClientInfo.doPost(sendClientInfo.java:101)
+	at edu.byui.cit360.controller.sendClientInfoTest.testDoPost(sendClientInfoTest.java:56)
+testDoGet(edu.byui.cit360.controller.sendClientInfoTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at edu.byui.cit360.controller.sendClientInfo.processRequest(sendClientInfo.java:42)
+	at edu.byui.cit360.controller.sendClientInfo.doGet(sendClientInfo.java:87)
+	at edu.byui.cit360.controller.sendClientInfoTest.testDoGet(sendClientInfoTest.java:43)
+testProcessRequest(edu.byui.cit360.controller.sendClientInfoTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException
+	at edu.byui.cit360.controller.sendClientInfo.processRequest(sendClientInfo.java:42)
+	at edu.byui.cit360.controller.sendClientInfoTest.testProcessRequest(sendClientInfoTest.java:30)
+testGetServletInfo(edu.byui.cit360.controller.sendClientInfoTest)  Time elapsed: 0 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: expected:<[]> but was:<[Short description]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at junit.framework.Assert.assertEquals(Assert.java:87)
+	at edu.byui.cit360.controller.sendClientInfoTest.testGetServletInfo(sendClientInfoTest.java:69)
