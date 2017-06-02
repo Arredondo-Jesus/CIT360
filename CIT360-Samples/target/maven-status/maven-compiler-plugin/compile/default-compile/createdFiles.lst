@@ -15,8 +15,6 @@ org\quickconnectfamily\json\JSONOutputStream.class
 edu\byui\cit360\controller\sendClientInfo.class
 edu\byui\cit360\model\DBConnection.class
 org\quickconnectfamily\json\ContainerFactory.class
-edu\byui\cit360\model\Video.class
-edu\byui\cit360\controller\SearchYoutubeVideos$1.class
 edu\byui\cit360\model\ClientUser.class
 org\quickconnectfamily\json\Yylex.class
 org\quickconnectfamily\json\JSONUtilities.class
@@ -24,5 +22,4 @@ org\quickconnectfamily\json\ParseException.class
 edu\byui\cit360\model\Suppllier.class
 edu\byui\cit360\samples\collectionsExamples.class
 org\quickconnectfamily\json\JSONStream.class
-edu\byui\cit360\controller\SearchYoutubeVideos.class
 org\quickconnectfamily\json\JSONException.class
