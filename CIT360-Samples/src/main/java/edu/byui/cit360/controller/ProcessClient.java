@@ -88,4 +88,10 @@ public class ProcessClient {
         }
         return JSONObjects;
     }
+    
+    public void testInfinteloop(){
+        while (1==1){
+            System.out.println("Another time");
+        }
+    }
 }

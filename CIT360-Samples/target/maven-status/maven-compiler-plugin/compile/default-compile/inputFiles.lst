@@ -1,26 +1,25 @@
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\samples\Threads.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\ParseException.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\model\Client.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\JSONUtilities.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\Yytoken.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\controller\SearchYoutubeVideos.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\model\Suppllier.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\JSONOutputStream.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\ContentHandler.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\JSONInputStream.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\JSONException.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\model\Service.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\controller\ProcessClient.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\model\DBConnection.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\JSONStream.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\controller\sendClientInfo.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\model\ClientUser.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\model\Video.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\Yylex.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\model\Event.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\JSONStreamProtector.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\JSONParser.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\ContainerFactory.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\samples\collectionsExamples.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\model\SupplierUser.java
-C:\Users\Jesus Arredondo\Documents\NetBeansProjects\CIT360-Samples\CIT360-Samples\src\main\java\edu\byui\cit360\samples\RunnableExample.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\model\ClientUser.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\JSONStream.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\JSONParser.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\samples\collectionsExamples.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\ContentHandler.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\ContainerFactory.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\JSONException.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\model\DBConnection.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\model\Service.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\samples\Threads.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\android\HTTPURLConnectionExample.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\Yylex.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\samples\RunnableExample.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\controller\ProcessClient.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\JSONInputStream.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\JSONStreamProtector.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\controller\sendClientInfo.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\Yytoken.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\ParseException.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\JSONOutputStream.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\model\Event.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\model\SupplierUser.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\model\Client.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\qcjson\JSONUtilities.java
+C:\Users\jesus\OneDrive - BYU-Idaho\CIT 360\Code topics\CIT360\CIT360-Samples\src\main\java\edu\byui\cit360\model\Suppllier.java
