@@ -5,6 +5,8 @@
  */
 package application.controller.pattern;
 
+import java.util.HashMap;
+
 /**
  *
  * @author Jesus Arredondo
@@ -14,16 +16,23 @@ public class Dispatcher {
     private addClientView clientView;
     private HomeView homeView;
 
-    public Dispatcher() {
+    public void Dispatcher() {
         clientView = new addClientView();
         homeView = new HomeView();
     }
 
     public void dispatch(String request) {
+        HashMap views = new HashMap();
+        views.put("Home", homeView);
+        views.put("Client", clientView);
+
         if (request.equalsIgnoreCase("CLIENT")) {
-            clientView.show();
+            addClientView view1 = (addClientView) views.get("Client");
+            view1.show();
         } else {
-            homeView.show();
+            HomeView view2 = (HomeView) views.get("Home");
+            view2.show();
+
         }
     }
 }
