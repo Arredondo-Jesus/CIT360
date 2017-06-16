@@ -10,98 +10,107 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HTTPURLConnectionExample extends ProcessClient{
+public class HTTPURLConnectionExample extends ProcessClient {
 
-	//private final String USER_AGENT = "Mozilla/5.0";
+    //private final String USER_AGENT = "Mozilla/5.0";
+    public static void main(String[] args) throws Exception {
 
-	public static void main(String[] args) throws Exception {
+        HTTPURLConnectionExample http = new HTTPURLConnectionExample();
+        ArrayList<Client> clients = new ArrayList<Client>();
+        List<String> stringList = new ArrayList<>();
 
-		HTTPURLConnectionExample http = new HTTPURLConnectionExample();
-                ArrayList<Client> clients = new ArrayList<Client>();
-                List<String> stringList = new ArrayList<>();
+        System.out.println("Testing 1 - Send Http GET request");
+        List JSONStringsGet = http.sendGet();
+        List JSONObjGet = http.convertToJSONObject(JSONStringsGet);
 
-		System.out.println("Testing 1 - Send Http GET request");
-		List JSONStringsGet = http.sendGet();
-                List JSONObjGet=http.convertToJSONObject(JSONStringsGet);
-                                
-		System.out.println("\nTesting 2 - Send Http POST request");
-		 //using post method
-                List JSONStringsPost = http.sendPost();
-                List JSONObjPost=http.convertToJSONObject(JSONStringsPost);
+        System.out.println("\nTesting 2 - Send Http POST request");
+        //using post method
+        List JSONStringsPost = http.sendPost();
+        List JSONObjPost = http.convertToJSONObject(JSONStringsPost);
 
-	}
+        //Print json result
+        http.printJSON(JSONObjPost);
+        http.printJSON(JSONStringsPost);
+    }
 
-	// HTTP GET request
-	private List sendGet() throws Exception {
+    // HTTP GET request
+    private List sendGet() throws Exception {
 
-		String urlString = "http://creatingux.com/CIT360/clients.json";
+        String urlString = "http://creatingux.com/CIT360/clients.json";
 
-		URL url = new URL(urlString);
-		HttpURLConnection con = (HttpURLConnection) url.openConnection();
+        URL url = new URL(urlString);
+        HttpURLConnection con = (HttpURLConnection) url.openConnection();
 
-		// optional default is GET
-		con.setRequestMethod("GET");
-                
-                List<String> JSONStrings = new ArrayList<>();
-		int responseCode = con.getResponseCode();
-		System.out.println("\nSending 'GET' request to URL : " + url);
-		System.out.println("Response Code : " + responseCode);
+        // optional default is GET
+        con.setRequestMethod("GET");
 
-		BufferedReader in = new BufferedReader(
-		        new InputStreamReader(con.getInputStream()));
-		String inputLine;
-		StringBuffer response = new StringBuffer();
+        List<String> JSONStrings = new ArrayList<>();
+        int responseCode = con.getResponseCode();
+        System.out.println("\nSending 'GET' request to URL : " + url);
+        System.out.println("Response Code : " + responseCode);
 
-		while ((inputLine = in.readLine()) != null) {
-			response.append(inputLine);
-                        if (!"".equals(inputLine)){
-                            JSONStrings.add(inputLine);
-                        }
-		}
-		in.close();
+        BufferedReader in = new BufferedReader(
+                new InputStreamReader(con.getInputStream()));
+        String inputLine;
+        StringBuffer response = new StringBuffer();
 
-		//print result
-		System.out.println(response.toString());
-                return JSONStrings;
+        while ((inputLine = in.readLine()) != null) {
+            response.append(inputLine);
+            if (!"".equals(inputLine)) {
+                JSONStrings.add(inputLine);
+            }
+        }
+        in.close();
 
-	}
+        //print result
+        System.out.println(response.toString());
+        return JSONStrings;
 
-	// HTTP POST request
-	private List sendPost() throws Exception {
+    }
 
-		String urlString = "http://creatingux.com/CIT360/clients.json";
-		URL url = new URL(urlString);
-		HttpURLConnection con = (HttpURLConnection) url.openConnection();
-                List<String> JSONStrings = new ArrayList<>();
-		//add reuqest header
-		con.setRequestMethod("POST");
-		// Send post request
-		con.setDoOutput(true);
-		DataOutputStream wr = new DataOutputStream(con.getOutputStream());
-		//wr.writeBytes(urlParameters);
-		wr.flush();
-		wr.close();
+    // HTTP POST request
+    private List sendPost() throws Exception {
 
-		int responseCode = con.getResponseCode();
-		System.out.println("\nSending 'POST' request to URL : " + url);
-		System.out.println("Response Code : " + responseCode);
+        String urlString = "http://creatingux.com/CIT360/clients.json";
+        URL url = new URL(urlString);
+        HttpURLConnection con = (HttpURLConnection) url.openConnection();
+        List<String> JSONStrings = new ArrayList<>();
+        //add reuqest header
+        con.setRequestMethod("POST");
+        // Send post request
+        con.setDoOutput(true);
+        DataOutputStream wr = new DataOutputStream(con.getOutputStream());
+        //wr.writeBytes(urlParameters);
+        wr.flush();
+        wr.close();
 
-		BufferedReader in = new BufferedReader(
-		        new InputStreamReader(con.getInputStream()));
-		String inputLine;
-		StringBuffer response = new StringBuffer();
+        int responseCode = con.getResponseCode();
+        System.out.println("\nSending 'POST' request to URL : " + url);
+        System.out.println("Response Code : " + responseCode);
 
-		while ((inputLine = in.readLine()) != null) {
-			response.append(inputLine);
-                         if (!"".equals(inputLine)){
-                            JSONStrings.add(inputLine);
-                        }
-		}
-		in.close();
+        BufferedReader in = new BufferedReader(
+                new InputStreamReader(con.getInputStream()));
+        String inputLine;
+        StringBuffer response = new StringBuffer();
 
-		//print result
-		System.out.println(response.toString());
-                return JSONStrings;
+        while ((inputLine = in.readLine()) != null) {
+            response.append(inputLine);
+            if (!"".equals(inputLine)) {
+                JSONStrings.add(inputLine);
+            }
+        }
+        in.close();
 
-	}
+        //print result
+        System.out.println(response.toString());
+        return JSONStrings;
+
+    }
+
+    private void printJSON(List JSONList) {
+        System.out.println("=============================================");
+        for (int i = 0; i < JSONList.size(); i++) {
+            System.out.println(JSONList.get(i));
+        }
+    }
 }
