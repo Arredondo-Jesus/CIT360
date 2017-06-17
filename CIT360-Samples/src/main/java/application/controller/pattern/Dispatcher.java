@@ -13,15 +13,10 @@ import java.util.HashMap;
  */
 public class Dispatcher {
 
-    private addClientView clientView;
-    private HomeView homeView;
-
-    public void Dispatcher() {
-        clientView = new addClientView();
-        homeView = new HomeView();
-    }
-
     public void dispatch(String request) {
+        addClientView clientView = new addClientView();
+        HomeView homeView = new HomeView();
+
         HashMap views = new HashMap();
         views.put("Home", homeView);
         views.put("Client", clientView);
